@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'src/routes/home_page/index.dart';
+
 void main() {
   runApp(const FormApp());
 }
@@ -9,7 +11,13 @@ class FormApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      title: "Form app",
+      theme: ThemeData(primaryColor: Colors.teal),
+      home: const HomePage(),
+    );
   }
 }
+
+
 
